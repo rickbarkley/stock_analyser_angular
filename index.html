@@ -1,0 +1,23 @@
+<html ng-app="stockApp">
+<head>
+	<script src="js/angular.min.js">
+	<script src="js/bootstrap.min.js">
+	<script src="js/main.js">
+	<script src="js/controllers.js">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css.map">
+</head>
+
+<body ng-controller="stockListCtrl">
+
+  <ul>
+    <li ng-repeat="stock in stocks">
+      {{stock.name}}
+      <p>{{stock.snippet}}</p>
+    </li>
+  </ul>
+
+</body>
+</html>
